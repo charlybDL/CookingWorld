@@ -9,6 +9,8 @@ class Recette {
     int tempsPreparation
     int tempsCuisson
     Date dateCreation
+    static hasOne = [utilisateur : Utilisateur]
+    static hasMany = [commentaire : Commentaire, notes : Notes]
 
     static constraints = {
         titre (nullable : false, blank : false)
