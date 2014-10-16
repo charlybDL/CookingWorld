@@ -30,10 +30,6 @@
 					
 						<g:sortableColumn property="noteDifficulte" title="${message(code: 'notes.noteDifficulte.label', default: 'Note Difficulte')}" />
 					
-						<th><g:message code="notes.evaluateur.label" default="Evaluateur" /></th>
-					
-						<th><g:message code="notes.recette.label" default="Recette" /></th>
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -45,10 +41,6 @@
 						<td>${fieldValue(bean: notesInstance, field: "noteGout")}</td>
 					
 						<td>${fieldValue(bean: notesInstance, field: "noteDifficulte")}</td>
-					
-						<td>${fieldValue(bean: notesInstance, field: "evaluateur")}</td>
-					
-						<td>${fieldValue(bean: notesInstance, field: "recette")}</td>
 					
 					</tr>
 				</g:each>
