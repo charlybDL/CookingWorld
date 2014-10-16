@@ -10,8 +10,15 @@ class RecetteControllerSpec extends Specification {
 
     def populateValidParams(params) {
         assert params != null
-        // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+        params["pseudo"] = 'unPseudo'
+        params["titre"] = 'unTitre'
+        params["photo"] = 'unePhoto'
+        params["ingredients"] = 'desIngredients'
+        params["description"] = 'uneDescription'
+        params["tempsPreparation"] = 2
+        params["tempsCuisson"] = 2
+        params["dateCreation"] =  new Date()
+
     }
 
     void "Test the index action returns the correct model"() {
