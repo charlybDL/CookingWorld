@@ -4,7 +4,7 @@ class Notes {
     int noteClarete
     int noteGout
     int noteDifficulte
-
+    static hasOne = [recette : Recette]
 
     static constraints = {
         noteClarete (min : 0, max : 5)

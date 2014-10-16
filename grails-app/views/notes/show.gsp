@@ -50,6 +50,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${notesInstance?.recette}">
+				<li class="fieldcontain">
+					<span id="recette-label" class="property-label"><g:message code="notes.recette.label" default="Recette" /></span>
+					
+						<span class="property-value" aria-labelledby="recette-label"><g:link controller="recette" action="show" id="${notesInstance?.recette?.id}">${notesInstance?.recette?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:notesInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

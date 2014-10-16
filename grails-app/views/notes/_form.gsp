@@ -29,3 +29,12 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: notesInstance, field: 'recette', 'error')} required">
+	<label for="recette">
+		<g:message code="notes.recette.label" default="Recette" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="recette" name="recette.id" from="${cooking.world.Recette.list()}" optionKey="id" required="" value="${notesInstance?.recette?.id}" class="many-to-one"/>
+
+</div>
+
